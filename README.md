@@ -69,7 +69,7 @@ eksctl create iamserviceaccount \
 
 ---
 
-### 5. Add Helm Repo and Install the Controller
+### 5. Add Helm Repo and Install the Controller Drivers
 
 First, add the Helm repo:
 
@@ -159,6 +159,3 @@ kubectl describe ingress demo-ingress
 * [AWS Load Balancer Controller GitHub](https://github.com/kubernetes-sigs/aws-load-balancer-controller)
 * [Install Guide on AWS Docs](https://docs.aws.amazon.com/eks/latest/userguide/aws-load-balancer-controller.html)
 
-```
-
----
