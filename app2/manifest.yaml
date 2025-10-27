@@ -55,7 +55,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-  - host: "app1.gonela.site"
+  - host: "app2.gonela.site"
     http:
       paths:
       - pathType: Prefix
@@ -64,4 +64,4 @@ spec:
           service:
             name: app1
             port:
-              number: 80      # app-2 service port
+              number: 80 # app1 service port    # app-2 service port
