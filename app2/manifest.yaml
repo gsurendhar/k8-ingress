@@ -48,7 +48,7 @@ metadata:
   name: app-2
   annotations:
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS": 443}]'
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:315069654700:certificate/806e53c3-3894-49ff-96c7-fbd7c3b753ff # your ACM Certificate ARN need to add
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:293282637741:certificate/f440a85f-ccd6-4394-91af-4cc77762962a # your ACM Certificate ARN need to add
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/group.name: joindevops
