@@ -13,7 +13,7 @@ spec:
       purpose: ingress
       project: roboshop
       app: app-2
-  templates:
+  template:
     metadata:
       labels:
         purpose: ingress
@@ -57,9 +57,11 @@ spec:
   rules:
   - host: "app1.gonela.site"
     http:
-      paths: "/"
-      backend:
-        service:
-          name: app-2
-          port:
-            number: 80     # app-2 service port
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: app1
+            port:
+              number: 80      # app-2 service port
